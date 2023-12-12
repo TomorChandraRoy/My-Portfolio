@@ -3,6 +3,7 @@ import { ButtonContainer, GitHubButton, MobileIcon, MobileLink, MobileMenu, Nav,
 import { MdPortrait } from "react-icons/md";
 import { FaBars } from 'react-icons/fa';
 import { useTheme } from "styled-components";
+import { Bio } from "../../myData/Data";
 
 
 const NavBar = () => {
@@ -31,7 +32,7 @@ const NavBar = () => {
             <NavLink href="#education">Education</NavLink>
           </NavItems>
           <ButtonContainer>
-            <GitHubButton>GitHub Profile</GitHubButton>
+            <GitHubButton href={Bio?.github} target="_blank">GitHub Profile</GitHubButton>
           </ButtonContainer>
           {
                 isOpen &&
